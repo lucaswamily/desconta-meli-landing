@@ -3,23 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Desconta Meli | Ofertas e Cupons</title>
+
   <meta
     name="description"
-    content="Entre no grupo Desconta Meli e receba promoções, cupons e achadinhos selecionados todos os dias."
+    content="Entre no grupo Desconta Meli e receba promoções, cupons e achadinhos selecionados todos os dias direto no WhatsApp."
   />
 
+  <meta name="theme-color" content="#0b0b0b" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+    fbq('init', '1818689812254954');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+
+  <!-- Meta Pixel fallback -->
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1818689812254954&ev=PageView&noscript=1"
+      alt=""
+    />
+  </noscript>
+
   <main class="page">
 
+    <!-- HERO -->
     <section class="hero">
-      <div class="badge">🔥 OFERTAS TODOS OS DIAS</div>
+
+      <div class="badge">
+        🔥 OFERTAS TODOS OS DIAS
+      </div>
 
       <h1>
-        PAGAR CARO?<br />
+        PAGAR CARO?<br>
         <span>TÔ FORA!</span>
       </h1>
 
@@ -28,73 +85,146 @@
       </p>
 
       <div class="benefits">
-        <div>🎟️ Cupons selecionados</div>
-        <div>🔥 Ofertas todos os dias</div>
-        <div>🛒 Achadinhos de várias categorias</div>
-        <div>✅ Entrada gratuita</div>
+
+        <div>
+          🎟️ Cupons selecionados
+        </div>
+
+        <div>
+          🔥 Ofertas todos os dias
+        </div>
+
+        <div>
+          🛒 Achadinhos de várias categorias
+        </div>
+
+        <div>
+          ✅ Entrada gratuita
+        </div>
+
       </div>
 
       <a
         class="cta-button"
-        href="https://chat.whatsapp.com/KtK1atsbUnR9YG10DSmHrC"
+        href="SEU_LINK_DO_GRUPO_WHATSAPP"
         target="_blank"
         rel="noopener noreferrer"
-        onclick="trackLead()"
-      >
-        🟢 QUERO ENTRAR NO GRUPO
-      </a>
-
-      <p class="small-text">
-        Clique no botão e entre gratuitamente no grupo Desconta Meli.
-      </p>
-    </section>
-
-    <section class="proof">
-      <h2>Por que entrar?</h2>
-
-      <div class="cards">
-        <div class="card">
-          <div class="icon">💰</div>
-          <h3>Economize mais</h3>
-          <p>Ofertas selecionadas para você encontrar preços melhores.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">⚡</div>
-          <h3>Receba rápido</h3>
-          <p>As oportunidades chegam direto no seu WhatsApp.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">🎟️</div>
-          <h3>Cupons</h3>
-          <p>Fique de olho em cupons e promoções que podem durar pouco.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <h2>Quer pagar menos nas suas compras?</h2>
-      <p>Entre agora no grupo e acompanhe as próximas oportunidades.</p>
-
-      <a
-        class="cta-button"
-        href="https://chat.whatsapp.com/KtK1atsbUnR9YG10DSmHrC"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="trackLead()"
+        onclick="trackLead('botao_topo')"
       >
         🔥 ENTRAR GRÁTIS NO GRUPO
       </a>
+
+      <p class="small-text">
+        ✅ Grátis • 📱 Direto no WhatsApp • 🔥 Ofertas todos os dias
+      </p>
+
+    </section>
+
+
+    <!-- BENEFÍCIOS -->
+    <section class="proof">
+
+      <h2>Por que entrar?</h2>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">
+            💰
+          </div>
+
+          <h3>
+            Economize mais
+          </h3>
+
+          <p>
+            Ofertas selecionadas para você encontrar preços melhores.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            ⚡
+          </div>
+
+          <h3>
+            Receba rápido
+          </h3>
+
+          <p>
+            As oportunidades chegam direto no seu WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            🎟️
+          </div>
+
+          <h3>
+            Cupons
+          </h3>
+
+          <p>
+            Fique de olho em cupons e promoções que podem durar pouco.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+
+      <h2>
+        Não perca a próxima oferta 🔥
+      </h2>
+
+      <p>
+        Entre agora no grupo e acompanhe as próximas oportunidades.
+      </p>
+
+      <a
+        class="cta-button"
+        href="SEU_LINK_DO_GRUPO_WHATSAPP"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="trackLead('botao_final')"
+      >
+        🔥 ENTRAR GRÁTIS NO GRUPO
+      </a>
+
     </section>
 
   </main>
 
+
+  <!-- RODAPÉ -->
   <footer>
-    <p>DESCONTA MELI | Promoção boa a gente compartilha!</p>
-    <a href="privacidade.html">Política de Privacidade</a>
+
+    <p>
+      DESCONTA MELI | Promoção boa a gente compartilha!
+    </p>
+
+    <a href="privacidade.html">
+      Política de Privacidade
+    </a>
+
   </footer>
 
+
+  <!-- Scripts -->
   <script src="script.js"></script>
+
 </body>
 </html>
