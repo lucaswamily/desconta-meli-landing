@@ -1,7 +1,15 @@
-function trackLead() {
-  console.log("Clique no botão do grupo registrado.");
+function trackLead(botao) {
+
+  console.log("Lead registrado:", botao);
 
   if (typeof fbq === "function") {
-    fbq("track", "Lead");
+
+    fbq("track", "Lead", {
+      content_name: "Grupo Desconta Meli",
+      content_category: "Grupo WhatsApp",
+      button_location: botao
+    });
+
   }
+
 }
